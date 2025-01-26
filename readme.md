@@ -25,7 +25,7 @@ WEATHER_ICON_URL="https://openweathermap.org/img/wn/"
 ALLOWED_ORIGIN="http://localhost:3000"
 PORT=3300
 ```
-   Generate weather api key if for the first time user. Sign up and generate the key[openweathermap user sign up](https://home.openweathermap.org/users/sign_up)
+   Generate weather api key if for the first time user. Sign up and generate the key [openweathermap user sign up](https://home.openweathermap.org/users/sign_up)
 
 4. run  `npm install`   (with node 20 or above)
 5. run  `npm start` (Service will start at `http://localhost:3300`)
@@ -64,13 +64,19 @@ PORT=3300
 ## Way forward
 
 * **Web_app**:
+
   Added **Autosuggestion based on city input**
+  
   Impementing Hourly, Weekly weather forcast
+  
   Adding middleware, errorboundary, state management tools like redux, reducer or context api, zustand
+  
   Dark mode
+  
   Animation
 * **Server**
   Autosuggestions based on city name api
+  
   Hourly, Weekly weather forcast from one by one call weather api
 
 Contact me at **s.himanshusingh56@gmail.com** for further discussion or contribution or anything issue faced in api generation or setting it up.
