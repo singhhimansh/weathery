@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #EFF8FF;
+  --foreground: #171717;
+  --iconColor: #3C82F6;
+  --brightSun: #FDE047;
+  --moonNight: #272626;
+  --fadedRed: #FEF2F2;
+  --paleRed: #FEE2E1;
+  --red: #DC2625;
+  --crimsonRed: #991B1B;
+}
+
+.firstCapital {
+  @apply first-letter:capitalize
+}
+.tile {
+  @apply p-4 shadow-none text-nowrap text-sm flex flex-col justify-start bg-[#EFF8FF] gap-2 w-full rounded-lg
+}
+
+body {
+  color: var(--foreground);
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #C3DAEC, #A7CCEE);
+  font-family: Arial, Helvetica, sans-serif;
+}
