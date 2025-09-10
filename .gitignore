@@ -1,0 +1,43 @@
+# Node modules
+node_modules
+
+# Node server
+server/node_modules/*
+web_app/node_modules/*
+web_app/.next
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# Optional npm cache
+.npm/
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
