@@ -72,6 +72,7 @@ router.get("/", async (req, res, next) => {
     res.json(weatherDetails);
   } catch (error) {
     let err = error;
+    console.error("Error:", error);
     // if the error is an axios error, convert it to ApiError (open weather api issue)
     if(isAxiosError(err)){
       console.error("Axios error:", JSON.stringify(err));
@@ -80,6 +81,10 @@ router.get("/", async (req, res, next) => {
     // pass unrecognised errors to the error handler middleware
     next(err);
   }
+});
+
+router.get("/hc", (req, res) => {
+    res.send("working");
 });
 
 export { router as weather };
