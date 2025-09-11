@@ -7,7 +7,7 @@ export const en ={
     feelslike:'Feels like',
     pressure:'Pressure',
     visibility:'Visibility',
-    cloudiness:'Cloudiness',
+    cloudiness:'Cloudy',
     windSpeed:'Wind Speed',
     cityNameError:'City can have only alphabates.',
     citylengthError:"City should've at least 3 characters",

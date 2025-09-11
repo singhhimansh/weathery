@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className={`my-16 flex justify-center`}>
-      <main className="flex flex-col gap-10 justify-center w-1/2">
+      <main className="flex flex-col gap-10 justify-center lg:w-1/2 md:w-3/4 w-11/12">
         <CityInput handleData={handleWeatherData}/>
         <WeatherDisplay data={data}/>
       </main>

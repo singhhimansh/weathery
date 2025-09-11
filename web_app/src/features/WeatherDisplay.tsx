@@ -39,7 +39,7 @@ export default function WeatherDisplay({
   return (
     <Dropcard className={"p-5 border-2 flex gap-2 justify-between"}>
       <div className="flex flex-col w-1/3 gap-1 ">
-        <h2 className="text-xl text-gray-700  font-bold capitalize">
+        <h2 className="text-lg md:text-xl text-gray-700  font-bold capitalize">
           {name}
           {country ? ", " + country : null}
         </h2>
@@ -49,7 +49,7 @@ export default function WeatherDisplay({
         <div className="flex flex-row py-4 gap-1 -ml-2">
           {icon ? (
             <Image
-              className="saturate-200"
+              className="saturate-200 w-[40px] h-[40px] md:w-[70px] md:h-[70px]"
               alt={weather}
               width={70}
               height={70}
@@ -60,12 +60,12 @@ export default function WeatherDisplay({
           )}
 
           <div className="flex flex-col text-gray-700">
-            <h1 className="text-[28px] font-extrabold text-nowrap ">{temp}</h1>
+            <h1 className="text-[20px] md:text-[28px] font-extrabold text-nowrap ">{temp}</h1>
             <h4 className="text-xs font-black">{weather}</h4>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 w-2/3 gap-4 ">
+      <div className="grid grid-cols-3 w-2/3 gap-2 md:gap-4 ">
         <div
           className={twc("tile grid-item gap col-span-1 gap-4 justify-between")}
         >
@@ -97,7 +97,7 @@ export default function WeatherDisplay({
             <p className="font-bold pl-1">{visibility}</p>
           </div>
         </div>
-        <div className="grid grid-item col-span-2 grid-cols-2 gap-4">
+        <div className="grid grid-item col-span-2 md:col-span-2 md:grid-cols-2 gap-2 md:gap-4">
           <WeatherSingleTile
             label={en.feelslike}
             icon={<TemperatureScale />}
